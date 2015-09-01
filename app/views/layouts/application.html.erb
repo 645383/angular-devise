@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FlapperNewsAngular</title>
+  <title>FlapperNews</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-
-<%= yield %>
-
+<body ng-app="flapperNews">
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div ui-view></div>
+    <!--<ui-view></ui-view>-->
+  </div>
+</div>
 </body>
 </html>
