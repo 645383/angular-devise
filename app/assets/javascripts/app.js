@@ -1,1 +1,5 @@
-window.app = angular.module('flapperNews', ['ui.router', 'templates']);
+window.app = angular.module('flapperNews',
+    [
+        'ui.router',
+        'templates'
+    ]);
